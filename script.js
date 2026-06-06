@@ -20,7 +20,9 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
     return;
   }
 
-  if (!email.includes("@")) {
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  if (!emailPattern.test(email)) {
     alert("Format email tidak valid!");
     return;
   }
@@ -29,3 +31,5 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
 
   this.reset();
 });
+
+ 
