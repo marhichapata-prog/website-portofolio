@@ -164,6 +164,19 @@ progress {
   border-radius: 20px;
   font-size: 14px;
   font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.skills span:hover {
+  background: #1e90ff;
+  transform: translateY(-3px);
+}
+
+.skills span.active {
+  background: #2ed573;
+  transform: scale(1.2);
+  box-shadow: 0 0 15px rgba(46, 213, 115, 0.7);
 }
 
 /* PORTFOLIO */
@@ -275,6 +288,7 @@ footer {
   padding: 20px;
 }
 
+/* RESPONSIVE */
 /* RESPONSIVE */
 @media (max-width: 768px) {
 
